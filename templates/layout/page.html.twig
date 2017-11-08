@@ -1,0 +1,180 @@
+<div id="all">
+  <header>
+
+
+    <div id="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-5 contact">
+            <p class="hidden-sm hidden-xs">Contacteer ons via tel - email.</p>
+            <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a> <a
+                  href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+            </p>
+          </div>
+          <div class="col-xs-7">
+            <div class="social">
+              <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+            </div>
+
+            <div class="login">
+              <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span
+                    class="hidden-xs text-uppercase">Log in</span></a>
+              <a href="customer-register.html"><i class="fa fa-user"></i> <span class="hidden-xs text-uppercase">Registreer</span></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+      <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+          <div class="navbar-header">
+
+            <a class="navbar-brand home" href="index.html">
+              <img src="img/logo.png" alt="Universal logo" class="hidden-xs hidden-sm">
+              <img src="img/logo-small.png" alt="Universal logo" class="visible-xs visible-sm"><span class="sr-only">Universal - go to homepage</span>
+            </a>
+            <div class="navbar-buttons">
+              <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse"
+                      data-target="#navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-align-justify"></i>
+              </button>
+            </div>
+          </div>
+          <!--/.navbar-header -->
+
+          <div class="navbar-collapse collapse" id="navigation">
+
+            <div class="nav navbar-nav navbar-right">
+
+              {{ page.navigation_collapsible }}
+
+            </div>
+
+          </div>
+          <!--/.nav-collapse -->
+
+
+        </div>
+
+
+      </div>
+      <!-- /#navbar -->
+
+    </div>
+
+    <!-- *** NAVBAR END *** -->
+
+  </header>
+
+  <div id="heading-breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+
+          {{ page.titel }}
+
+        </div>
+        <div class="col-md-5">
+
+          {{ page.kruimelpad }}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+
+          {{ page.sidebar_first }}
+
+        </div>
+
+        <div class="col-md-9">
+
+
+          {% if page.highlighted %}
+            <div id="highlighted">{{ page.highlighted }}</div>{% endif %}
+          <a id="main-content"></a>
+
+          {{ title_prefix }}
+          {% if title %}
+            <h1 class="title" id="page-title">
+              {{ title }}
+            </h1>
+          {% endif %}
+          {{ title_suffix }}
+
+          {% if tabs %}
+            <nav class="tabs" role="navigation">
+              {{ tabs }}
+            </nav>
+          {% endif %}
+
+          {{ page.help }}
+          {% if action_links %}
+            <ul class="action-links">
+              {{ action_links }}
+            </ul>
+          {% endif %}
+
+          {{ page.content }}
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- *** GET IT ***
+_________________________________________________________ -->
+
+  <div id="get-it">
+    <div class="container">
+      <div class="col-sm-6">
+
+        {{ page.kleurlinks }}
+
+      </div>
+      <div class="col-sm-6">
+
+        {{ page.kleurrechts }}
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- *** GET IT END *** -->
+
+
+  <!-- *** FOOTER ***
+_________________________________________________________ -->
+
+  <footer id="footer">
+    <div class="container text-center">
+      <div class="col-sm-12">
+
+        {{ page.footer }}
+
+      </div>
+    </div>
+  </footer>
+
+
+</div>
+ 

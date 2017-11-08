@@ -1,0 +1,21 @@
+{
+  "name": "universal",
+  "description": "CVO project",
+  "main": "index.js",
+  "authors": [
+    "Stefan VDB"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/illutek/universal",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0",
+    "animate.css": "^3.5.2"
+  }
+}
